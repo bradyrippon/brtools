@@ -1,0 +1,15 @@
+Package: mytools
+Title: Repository for Useful Functions
+Version: 0.1.0
+Authors@R: 
+    person("Brady", "Rippon", , "brr7014@med.cornell.edu", role = c("aut", "cre"))
+Description: This package is a collection of functions that I use frequently in my work. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
+Imports: 
+    cli,
+    here,
+    rstudioapi,
+    togglr
