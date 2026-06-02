@@ -13,3 +13,5 @@ Imports:
     here,
     rstudioapi,
     togglr
+URL: https://github.com/bradyrippon/mytools
+BugReports: https://github.com/bradyrippon/mytools/issues
