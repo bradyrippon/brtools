@@ -5,19 +5,19 @@
 #' @param tags Toggl tag. Defaults to the parent folder name.
 #'
 #' @export
-toggl_code <-
-  function(
+toggl_code <- function(
     desc = "Code/Reports",
     tags = here::here() |> dirname() |> basename()
-  ) {
-    timer <- .prepare_toggl(desc, tags)
+  ){
 
-    togglr::toggl_start(
-      description = timer$desc,
-      tags        = timer$tags
-    )
-    cli::cli_alert_success("Started timer with tag {.val {timer$tags}}.")
-  }
+  timer <- .prepare_toggl(desc, tags)
+
+  togglr::toggl_start(
+    description = timer$desc,
+    tags        = timer$tags
+  )
+  cli::cli_alert_success("Started timer with tag {.val {timer$tags}}.")
+}
 
 
 #' Start a Toggl timer for research time
@@ -26,19 +26,19 @@ toggl_code <-
 #' @param tags Toggl tag. Defaults to the parent folder name.
 #'
 #' @export
-toggl_research <-
-  function(
+toggl_research <- function(
     desc = "Research/Writing",
     tags = here::here() |> dirname() |> basename()
-  ) {
-    timer <- .prepare_toggl(desc, tags)
+  ){
 
-    togglr::toggl_start(
-      description = timer$desc,
-      tags        = timer$tags
-    )
-    cli::cli_alert_success("Started timer with tag {.val {timer$tags}}.")
-  }
+  timer <- .prepare_toggl(desc, tags)
+
+  togglr::toggl_start(
+    description = timer$desc,
+    tags        = timer$tags
+  )
+  cli::cli_alert_success("Started timer with tag {.val {timer$tags}}.")
+}
 
 
 #' Start a Toggl timer for research work
@@ -47,26 +47,25 @@ toggl_research <-
 #' @param tags Toggl tag. Defaults to the parent folder name.
 #'
 #' @export
-toggl_meeting <-
-  function(
+toggl_meeting <-function(
     desc = "Meetings/Emails",
     tags = here::here() |> dirname() |> basename()
-  ) {
-    timer <- .prepare_toggl(desc, tags)
+  ){
 
-    togglr::toggl_start(
-      description = timer$desc,
-      tags        = timer$tags
-    )
-    cli::cli_alert_success("Started timer with tag {.val {timer$tags}}.")
-  }
+  timer <- .prepare_toggl(desc, tags)
+
+  togglr::toggl_start(
+    description = timer$desc,
+    tags        = timer$tags
+  )
+  cli::cli_alert_success("Started timer with tag {.val {timer$tags}}.")
+}
 
 
 
 ## helpers ----------
 
 .prepare_toggl <- function(desc, tags) {
-
   project <- rstudioapi::getActiveProject()
   if (is.null(project)) {cli::cli_abort("No active project found.")}
 
