@@ -1,0 +1,51 @@
+
+/* outer container */
+.tbl-button-wrap {
+  display: flex;
+  justify-content: center; /* center under table */
+  margin-top: 12px;        /* space above button */
+  margin-bottom: 12px;     /* space below button */
+}
+
+/* main button */
+.tbl-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;                    /* interior white space */
+  border: 1px solid var(--border); /* color and thickness of border */
+  border-radius: 8px;              /* rounded corners */
+  background: var(--bg);           /* fill color */
+  color: var(--text);              /* text color */
+}
+
+/* text inside main button (Download Table) */
+.tbl-button-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;     /* button height */
+  padding: 0 12px;  /* left/right spacing */
+  font-weight: 500; /* medium boldness */
+}
+
+/* download buttons */
+.tbl-button-option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;                           /* button height */
+  padding: 0 12px;                        /* button width */
+  margin-left: 5px;                       /* spacing between buttons */
+  border: 1px solid var(--option-border); /* button outline */
+  border-radius: 6px;                     /* rounded corners */
+  background: var(--option-bg);           /* fill color */
+  color: var(--option-text);              /* text color */
+  text-decoration: none;                  /* remove hyperlink styling */
+}
+
+/* effects when hovering over buttons */
+.tbl-button-option:hover {
+  background: var(--option-hover-bg); /* fill color */
+  color: var(--option-hover-text);    /* text color */
+  text-decoration: none;              /* remove hyperlink styling */
+}
