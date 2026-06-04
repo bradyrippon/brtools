@@ -4,7 +4,7 @@
 #' @param tbl A `gtsummary` table.
 #' @param indent Indentation size for level rows.
 #'
-#' @return A  styled `gtsummary` table.
+#' @return A styled `gtsummary` table.
 #'
 #' @export
 gtsummary_style_groups <- function(tbl, indent = 8L){
