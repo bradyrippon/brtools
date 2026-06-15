@@ -12,7 +12,7 @@ gtsummary_style_groups(tbl, indent = 8L)
 \item{indent}{Indentation size for level rows.}
 }
 \value{
-A  styled \code{gtsummary} table.
+A styled \code{gtsummary} table.
 }
 \description{
 Style \code{gtsummary} variable group headers

@@ -10,8 +10,12 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 8.0.0
 Imports: 
     cli,
+    colourpicker,
+    ggplot2,
     here,
+    rlang,
     rstudioapi,
+    shiny,
     togglr
 URL: https://github.com/bradyrippon/mytools
 BugReports: https://github.com/bradyrippon/mytools/issues

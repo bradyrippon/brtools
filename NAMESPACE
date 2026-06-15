@@ -2,6 +2,7 @@
 
 export(gt_color_groups)
 export(gtsummary_style_groups)
+export(hexcolor)
 export(save_data)
 export(save_tbl)
 export(tbl_button)
